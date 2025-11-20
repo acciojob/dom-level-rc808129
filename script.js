@@ -6,7 +6,7 @@ const element = document.getElementById("level");
 
 // DOM level calculate karne ke liye function
 function getDomLevel(el) {
-    let level = 0;
+    let level = 1;
     let current = el;
 
     // Jab tak parent element milta rahe, loop chalao
