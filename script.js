@@ -10,8 +10,8 @@ function getDomLevel(el) {
     let current = el;
 
     // Jab tak parent element milta rahe, loop chalao
-    while (current.parentNode && current.tagName !== 'HTML') {
-        current = current.parentNode;
+    while (current.parentElement) {
+        current = current.parentElement;
         level++;
     }
     return level;
